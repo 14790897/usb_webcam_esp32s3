@@ -1,6 +1,5 @@
 # ESP-IDF Build artifacts
 build/
-*.bin
 *.elf
 *.map
 
@@ -57,7 +56,6 @@ cmake_install.cmake
 build.ninja
 
 # Flash images and binaries
-*.bin
 *.elf
 *.map
 merged_firmware.bin
