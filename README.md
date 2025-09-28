@@ -63,12 +63,15 @@
 
 ### 环境准备
 
+> **重要**：本项目推荐使用 **ESP-IDF v5.0** 进行编译和烧录，以确保最佳的兼容性和稳定性。更高版本（v5.1+）可能存在兼容性问题，较低版本无法正常编译。 参考问题：[issue #585](https://github.com/espressif/esp-iot-solution/issues/585)
+
 1. 安装ESP-IDF开发框架：
 
    ```bash
-   # 安装ESP-IDF v5.0+
+   # 安装ESP-IDF v5.0（推荐版本）
    git clone --recursive https://github.com/espressif/esp-idf.git
    cd esp-idf
+   git checkout v5.0
    ./install.sh
    . ./export.sh
    ```
@@ -178,7 +181,7 @@ usb_webcam/
    - 确认光线条件是否充足
 
 3. **编译错误**
-   - 确认ESP-IDF版本兼容性（推荐v5.0+）
+   - 确认ESP-IDF版本兼容性（**仅推荐v5.0版本，v5.1+可能有兼容问题**）
    - 检查组件依赖是否正确下载
    - 清理构建缓存后重新编译：`idf.py fullclean`
 
@@ -231,7 +234,7 @@ idf.py monitor
 
 ### 开发环境
 
-- ESP-IDF v5.0+
+- ESP-IDF v5.0（推荐，更高版本可能有兼容问题）
 - CMake 3.5+
 - 支持ESP32-S3的开发环境
 
