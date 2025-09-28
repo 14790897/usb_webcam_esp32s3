@@ -1,0 +1,70 @@
+# ESP-IDF Build artifacts
+build/
+*.bin
+*.elf
+*.map
+
+# Dependency lock files
+dependencies.lock
+
+# Configuration files (keep defaults, ignore user-specific)
+sdkconfig
+sdkconfig.old
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Linux
+*~
+.directory
+
+# Python cache (if using Python scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log files
+*.log
+log/
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+
+# CMake cache and generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+
+# Flash images and binaries
+*.bin
+*.elf
+*.map
+merged_firmware.bin
+
+# Managed components cache
+managed_components/*
+
+# ESP-IDF specific
+.esp_idf_version
+idf_component_tools.lock
